@@ -48,7 +48,7 @@ class QRController extends Controller
     
     public function qrdetails($id)
     {
-        $id = 1;
+        $id = $id;
         $userDetails = DB::table('user_details')->where('id',$id)->first();
         return view('qrpage',['userdata'=> $userDetails]);
     }
