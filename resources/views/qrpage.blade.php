@@ -28,12 +28,12 @@
                 <div class="header">
                     <div class="header-container">
                         <div class="title">
-                            <h3> Rahul Kumar</h3>
-                            <p>CEO</p>
+                            <h3> {{ $userdata->name }}</h3>
+                            <p>{{ $userdata->designation }}</p>
                         </div>
                         <div class="content">
                             <div class="phone">
-                                <a href="tel:123-456-7890">
+                                <a href="tel:{{ $userdata->contact_no }}">
                                     <i class="fa fa-phone" aria-hidden="true"></i>
                                     <p>Call</p>
                                 </a>
@@ -41,7 +41,7 @@
                                 
                             </div>
                             <div class="phone">
-                                <a href="mailto:someone@example.com">
+                                <a href="mailto:{{ $userdata->email }}">
                                     <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                     <p> Email</p>
                                 </a>
@@ -58,7 +58,7 @@
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                             </div>
                             <div class="no-text">
-                                <p class="contact-text-number">9953551266</p>
+                                <p class="contact-text-number">{{ $userdata->contact_no }}</p>
                                 <p class="contact-text">Mobile</p>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                 <i class="fa fa-envelope" aria-hidden="true"></i> 
                             </div>
                             <div class="no-text">
-                                <p class="contact-text-number">neeraj.chaursiya@echttech.com</p>
+                                <p class="contact-text-number">{{ $userdata->email }}</p>
                                 <p class="contact-text">Email</p>
                             </div>
                         </div>
@@ -78,17 +78,17 @@
                                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                             </div>
                             <div class="no-text">
-                                <p class="contact-text-number">Echt Tech Counsultancy Services Pvt Ltd</p>
-                                <p class="contact-text">CEO</p>
+                                <p class="contact-text-number">{{ $userdata->organization }}</p>
+                                <p class="contact-text">{{ $userdata->designation }}</p>
                             </div>
                         </div>
 
                         <div class="box-text">
                             <div class="icon">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
                             </div>
                             <div class="no-text">
-                                <p class="contact-text-number"> www.echttech.com</p>
+                                <p class="contact-text-number"><a style="text-decoration: none; color:#333;" href="{{ $userdata->website }}">{{ $userdata->website }}</a></p>
                                 <p class="contact-text">Website</p>
                             </div>
                         </div>
@@ -99,11 +99,10 @@
                                 <p>Sociol Media</p>
 
                                 <div class="sociol-icon">
-                                    <a href="#" ><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                                    <a href="#" class="map"><img src="./map.jpeg" alt="map"></a>
+                                    <a href="{{ $userdata->linkedin }}" ><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    <a href="{{ $userdata->instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="{{ $userdata->twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://goo.gl/maps/gnNziCeMnwu12SW89" class="map"><img src="{{ asset('images/map.jpeg') }}" alt="map"></a>
                                 </div>
                             </div>
                         </div>

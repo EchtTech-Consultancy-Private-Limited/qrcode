@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
-use View;
+use Redirect;
 use DB;
 class QRController extends Controller
 {
@@ -48,9 +48,9 @@ class QRController extends Controller
     
     public function qrdetails($id)
     {
-        $id = $id;
-        $userDetails =  DB::table('user_details')->where('id',$id)->get();
-        dd($userDetails);
+        $id = 1;
+        $userDetails = DB::table('user_details')->where('id',$id)->first();
+        return view('qrpage',['userdata'=> $userDetails]);
     }
     
     public function qrcodegeneration()
