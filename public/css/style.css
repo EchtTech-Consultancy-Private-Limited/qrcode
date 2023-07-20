@@ -13,6 +13,8 @@ a {
 
 .header {
   background: linear-gradient(to bottom, #0A3D76, #1563bb);
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .header .title {
   text-align: center;
