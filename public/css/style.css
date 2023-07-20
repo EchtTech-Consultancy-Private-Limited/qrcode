@@ -73,10 +73,11 @@ a {
   font-size: 18px;
 }
 .box-text .no-text {
-  border-bottom: 2px solid #dedede;
-  width: 100%;
-  margin-left: 20px;
-  padding-bottom: 10px;
+border-bottom: 2px solid #dedede;
+    width: 100%;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    margin-top: 10px;
 }
 .box-text .no-text p {
   margin-bottom: 0;
