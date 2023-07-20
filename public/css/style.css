@@ -6,20 +6,25 @@
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 .header {
   background: linear-gradient(to bottom, #0A3D76, #1563bb);
 }
 .header .title {
   text-align: center;
-  padding: 38px 0 28px 0;
+  padding: 30px 0 20px 0;
 }
 .header .title h3 {
   color: #fff;
-  font-size: 25px;
+  font-size: 23px;
 }
 .header .title p {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
 }
 .header .mob-body {
   border: 1px solid grey;
@@ -48,7 +53,7 @@
   transform: rotate(45deg);
 }
 .header .content .phone p {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
   margin-bottom: 0;
   padding: 13px 0 0 0;
@@ -56,7 +61,7 @@
 }
 .header .content .phone i {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .box-text {
@@ -77,10 +82,10 @@
 .box-text .no-text .contact-text-number {
   font-weight: 500;
   color: #2d2d2d;
-  font-size: 17px;
+  font-size: 14px;
 }
 .box-text .no-text .contact-text {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   color: #7f7f7f;
 }
@@ -90,7 +95,7 @@
 }
 
 .media {
-  padding: 20px 12px;
+  padding: 50px 12px 20px;
 }
 .media .media-text p {
   font-weight: 500;
@@ -98,12 +103,12 @@
   font-size: 20px;
 }
 .media .sociol-icon {
-  padding: 18px 0;
+  padding: 0px 0 18px;
 }
 .media .sociol-icon a {
   border-radius: 50%;
   background: grey;
-  padding: 0px 12px;
+  padding: 0px 6px;
   text-align: center;
 }
 .media .sociol-icon a i {
@@ -134,13 +139,13 @@
   display: flex;
 }
 .media .sociol-icon a {
-  line-height: 55px;
+  line-height: 44px;
   border-radius: 50%;
   background: grey;
   display: block;
   text-align: center;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   margin-right: 8px;
 }
 .media .sociol-icon a .map {
@@ -158,6 +163,7 @@
   display: flex;
 }
 .map img {
-  width: 50px;
-  height: 50px;
+  width: 38px;
+  height: 38px;
+  margin-top: -9px;
 }/*# sourceMappingURL=style.css.map */
