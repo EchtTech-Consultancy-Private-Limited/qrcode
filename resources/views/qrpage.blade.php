@@ -88,7 +88,7 @@
                                 <i class="fa fa-globe" aria-hidden="true"></i>
                             </div>
                             <div class="no-text">
-                                <p class="contact-text-number"><a style="text-decoration: none; color:#333;" href="{{ $userdata->website }}">{{ $userdata->website }}</a></p>
+                                <p class="contact-text-number"><a style="text-decoration: none; color:#333;" target="_blank" href="{{ $userdata->website }}">{{ $userdata->website }}</a></p>
                                 <p class="contact-text">Website</p>
                             </div>
                         </div>
